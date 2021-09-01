@@ -96,7 +96,8 @@ open class IMGLYOrientationEditorViewController: IMGLYSubEditorViewController {
         super.viewDidLayoutSubviews()
         
         transparentRectView.frame = view.convert(previewImageView.visibleImageFrame, from: previewImageView)
-        reCalculateCropRectBounds()
+        //reCalculateCropRectBounds()
+        self.layoutCropRectViews()
     }
     
     // MARK: - IMGLYEditorViewController
